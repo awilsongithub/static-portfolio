@@ -1,0 +1,385 @@
+/*
+==================================
+MAJOR ELEMENTS
+===================================
+*/
+body {
+
+}
+div {
+	min-height: 10px;
+}
+.wrapper {
+	padding-top: 30px;
+	padding-bottom: 0px;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+.nav-wrapper {
+	padding-left: 5%;
+	padding-right: 5%;
+}
+.nav-wrapper ul {
+	padding: 1.25em 15px;
+}
+.work-sample-title {
+	padding-bottom: 0px;
+}
+input {
+  height: 1.5em;
+  width: 100%;
+  font-size: 1.5em;
+  padding-bottom: .5em;
+  margin: 15px 0 15px 0;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+.kuler-grey {
+	color: #644D52; /* purple/grey */
+	/*color: #A49A87; i like purple above better than this grey */
+}
+.purple-brown {
+	color: #2E2025;
+}
+ul, li {
+	display: list-item;
+	/*list-style-type: disc;*/
+	padding-bottom: .5em;
+	line-height: normal;
+	margin-left: .5em;
+}
+.odd{
+	backgroun-color: #F6F4F1;
+}
+ /* this is materialize footer */
+footer.page-footer {
+	/*background-color: #202020;*/
+	background-color: #382937; /* dark purple from kuler */
+	margin-top: 0px;
+}
+
+#three-column {
+	padding: 0rem 2.25rem 0rem 0rem;
+}
+blockquote {
+  border-left: 5px solid #747474; /* Just change the color value and that's it*/
+  /*background-color: red;*/
+}
+.align-right {
+	text-align: right;
+	font-weight: 500;
+}
+.divider-bar {
+	/*background: #f0f0f0;*/
+	/*background: repeating-linear-gradient(135deg, #ebd007, #ebd007 30px, #555 30px, #555 60px);*/
+	/*background: repeating-linear-gradient(125deg, #e6b800, #e6b800 30px, #2A1D24 30px, #2A1D24 60px);*/
+	background-color: #382937; /* dark purple from kuler */
+	height: 75px;
+	color: white;
+}
+.divider-bar-work-samples-list {
+	background-color: #F6F4F1; /* grey */
+	height: 75px;
+}
+.divider-bar p {
+	margin-top: 0px;
+	padding-left: 5%;
+	padding-top: 10px;
+
+}
+
+/*
+==================================
+NAV
+===================================
+*/
+
+nav {
+	padding-top: 10px;
+	height: 90px;
+	/*background-color: #2A1D24;*/
+	/*background-color: #5A3E4C;*/
+	background-color: #382937; /* dark purple from kuler */
+}
+nav .button-collapse {
+    float: right;
+}
+
+/*
+==================================
+HERO DIV
+===================================
+*/
+#hero-text {
+	padding-top: 100px;
+	text-align: center;
+}
+#hero-subheading {
+	color: white;
+	text-shadow: 0px 1px 2px rgba(68, 68, 68, 1);
+	font-size: 1.5em;
+	line-height:
+}
+ #hero-subheading .fa {
+	color: white;
+ 	text-shadow: 0px 1px 2px rgba(68, 68, 68, 1);
+}
+#hero-image {
+	/*81, 45, 168,*/
+	background:
+	linear-gradient(rgba(90, 62, 76, 0.5), rgba(0, 0, 0, 0.7)), url(../media/adam_workspace_cropped.jpg);
+	background-size: cover;
+	color: white;
+	height: 450px;
+}
+
+
+/*
+==================================
+RECIPE CARDS
+===================================
+*/
+
+#portfolio {
+	/*background-color: #202020;*/
+	/*color: white;*/
+}
+.card {
+	max-height: 500px;
+}
+#card-column {
+	padding: 0 45 0 0;
+}
+.card-title {
+  background: rgba(81, 45, 168, .9);
+  width: 100%;
+  /*min-height: 300px;*/
+}
+.card-section {
+	padding-bottom: 0px;
+}
+.card-image img {
+  /*height: 350px;*/
+  width: 100%;
+  max-height: 300px;
+  /*height: 200px; this can change aspect ratio */
+}
+.card-content {
+  color: #353A3B;
+}
+
+.chip {
+  font-size: 1.25em;
+}
+#recipe-card-image {
+    object-fit: cover;
+}
+/*
+==================================
+FORM ELEMENTS
+===================================
+*/
+form {
+    width: 25em;
+    max-width: 80%;
+    margin: auto;
+}
+label {
+	font-size: 1.25em;
+	font-weight: bold;
+}
+.submit-btn {
+	background-color: #ffab40;
+	margin: 10px 0 10px 0;
+}
+
+.form-auth {
+	max-width: 330px;
+	padding: 5px;
+	margin: 0 auto;
+}
+
+/*
+==================================
+SINGLE WORK SAMPLE PAGE
+===================================
+*/
+
+ul, li {
+	padding-bottom: .5em;
+	margin-left: .5em;
+
+}
+.list-header {
+
+    border-bottom: 1px #e5e2db;
+    background-color: #FAF9F5;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+img#recipe-main-image.materialboxed.initialized.active {
+    max-height: none;
+}
+/*
+==================================
+OTHER STYLING
+===================================
+*/
+.container {
+  width: 92%;
+}
+.material-icons {
+  vertical-align: middle;
+}
+.fa {
+	color: lightgrey;
+}
+.brand-logo {
+  position: relative;
+  display: block;
+  font-weight: 600;
+  font-size: 2.5em;
+}
+.yellow-underline {
+	border-bottom: 4px solid #ffab40;
+	display: inline-block;
+}
+.about-section {
+	background-color: #F6F4F1;
+}
+#imageadam {
+     width: 40%;
+	 margin: auto;
+	 max-width: 175px;
+	 padding: 10px 10px 3px 0px;
+     /* display: block; */
+     float: left;
+}
+
+/*
+==================================
+MEDIA QUERIES
+===================================
+*/
+
+@media only screen and (max-width: 992px) {
+	nav .brand-logo {
+	  left: 10%;
+      -webkit-transform: translateX(-20%);
+      transform: translateX(-20%);
+	}
+}
+@media only screen and (max-width: 500px) {
+	nav .brand-logo {
+	  left: 28%;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+	}
+	#hero-text {
+		padding-top: 40px;
+		text-align: center;
+	}
+	#hero-subheading {
+		font-weight: normal;
+	}
+	#hero-image {
+		/*81, 45, 168,*/
+		background:
+		linear-gradient(rgba(90, 62, 76, 0.5), rgba(0, 0, 0, 0.7)), url(../media/adam_workspace_cropped.jpg);
+		background-size: cover;
+		color: white;
+		height: 250px;
+	}
+
+}
+/*HOW OVERIDE THIS WHICH CENTERS BRAND LOGO AT MEDIUM
+@media only screen and (max-width: 980px)
+nav .brand-logo {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}*/
+
+
+/*
+==================================
+REMOVED CODE
+===================================
+*/
+
+/*.card .card-action {
+	padding-left: 20px;
+}*/
+	/*padding-top: 0px;
+   padding-bottom: 0px;
+	color: #565656;*/
+	/*padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	text-align: left;*/
+	/*font-size: .9em;*/
+	/*color: #D3D7DF;
+	background-color: red;
+}
+.card a, .card-action a {*/
+	/*padding-top: 0px;
+   padding-bottom: 0px;
+	color: #565656;*/
+	/*padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	text-align: left;*/
+	/*font-size: .9em;*/
+	/*color: #D3D7DF;
+}*/
+
+
+/*#main-image-section {
+  background-color: #FAF9F5;
+  padding-top: 25px;
+  padding-bottom: 0px;
+}
+#recipe-heading {
+  text-align: center;
+  padding-top: 15px;
+  background-color: #202020;
+  color: white;
+
+}*/
+/*#recipe-main-image {
+  width: 100%;
+  overflow: hidden;
+  object-fit: cover;
+}
+#cooktime-div {
+    background-color: #757575;
+    color: white;
+}*/
+
+/*container {   DIDN'T WORK...
+	width: 85%;
+}*/
+
+/* these were my original draft footer styles */
+/*footer {
+	margin-top: 0px;
+	padding-top: 25px;
+	height: px;
+	color: white;
+	line-height: 1.5em;
+   border-top: 1px solid #e6b800;
+}
+footer .fa ul a {
+	font-size: 1.5em;
+	color: white;
+	padding-right: .25em;
+   vertical-align: middle;
+
+}*/
+/*footer li, a {
+	list-style-type: none;
+	font-size: 1.25em;
+    line-height: 2em;
+	/*padding-bottom: 0px;
+} */
