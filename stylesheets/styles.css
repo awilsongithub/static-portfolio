@@ -9,15 +9,20 @@ body {
 div {
 	min-height: 10px;
 }
+p {
+    font-weight: 300;
+}
 .wrapper {
-	padding-top: 30px;
-	padding-bottom: 0px;
-	padding-left: 5%;
-	padding-right: 5%;
+    /*padding-top: 30px;*/
+	/*padding-bottom: 0px;*/
+	/*padding-left: 5%;
+	padding-right: 5%;*/
+    /*LET CONTAINER DO MARGINS */
 }
 .nav-wrapper {
-	padding-left: 5%;
-	padding-right: 5%;
+	/*padding-left: 5%;
+	padding-right: 5%;*/
+    /*LET CONTAINER DO MARGINS */
 }
 .nav-wrapper ul {
 	padding: 1.25em 15px;
@@ -113,7 +118,7 @@ HERO DIV
 */
 #hero-text {
 	padding-top: 100px;
-	text-align: center;
+	/*text-align: center;*/
 }
 #hero-subheading {
 	color: white;
@@ -131,7 +136,7 @@ HERO DIV
 	linear-gradient(rgba(90, 62, 76, 0.5), rgba(0, 0, 0, 0.7)), url(../media/adam_workspace_cropped.jpg);
 	background-size: cover;
 	color: white;
-	height: 450px;
+	height: 550px;
 }
 
 
@@ -151,10 +156,12 @@ RECIPE CARDS
 #card-column {
 	padding: 0 45 0 0;
 }
-.card-title {
+/*.card-title {
   background: rgba(81, 45, 168, .9);
   width: 100%;
-  /*min-height: 300px;*/
+}*/
+.project-row {
+    margin: 120px 0px 120px 0px;
 }
 .card-section {
 	padding-bottom: 0px;
@@ -167,10 +174,6 @@ RECIPE CARDS
 }
 .card-content {
   color: #353A3B;
-}
-
-.chip {
-  font-size: 1.25em;
 }
 #recipe-card-image {
     object-fit: cover;
@@ -226,8 +229,13 @@ img#recipe-main-image.materialboxed.initialized.active {
 OTHER STYLING
 ===================================
 */
-.container {
+/*.container {
   width: 92%;
+}*/
+.hr-shadow {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(227, 227, 227, 0.75), rgba(0, 0, 0, 0));
 }
 .material-icons {
   vertical-align: middle;
