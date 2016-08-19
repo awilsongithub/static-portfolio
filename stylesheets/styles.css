@@ -110,7 +110,9 @@ nav {
 nav .button-collapse {
     float: right;
 }
-
+#top-nav-menu {
+    padding: 25px;
+}
 /*
 ==================================
 HERO DIV
