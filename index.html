@@ -10,13 +10,15 @@ http://www.dwuser.com/education/content/quick-guide-adding-smooth-scrolling-to-y
 
     <!-- STYLES CDN -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css"> -->
 
     <!-- STYLES LOCAL -->
     <link rel="stylesheet" href="stylesheets/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="stylesheets/font-awesome.min.css" >
     <link rel="stylesheet" href="stylesheets/materialize.min.css">
+    <!-- developer icon set -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
     <link rel="stylesheet" href="stylesheets/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
@@ -57,13 +59,18 @@ http://www.dwuser.com/education/content/quick-guide-adding-smooth-scrolling-to-y
    </nav>
 
 
+   <!-------------------------------------------------->
+   <!--               PARTIALS GO HERE               -->
+   <!-------------------------------------------------->
+
+
 
  <!--------------------->
  <!--  HERO IMAGE     -->
  <!--------------------->
  <div class="section" id="hero-image">
      <div class="row container">
-        <div id="hero-text">
+        <div id="hero-text" class='col l6 offset-l3'>
              <h3 id="hero-heading">Front End Developer</h3>
 
              <!-- PARAGRAPH HERO TEXT W BUTTONS -->
@@ -71,10 +78,17 @@ http://www.dwuser.com/education/content/quick-guide-adding-smooth-scrolling-to-y
              <a href="#portfolio" class='smoothScroll'><button type="button" class="waves-effect waves-light btn">Projects</button></a>
              <a href="#contact" class='smoothScroll'><button type="button" class="waves-effect waves-light btn">Contact Adam</button></a> -->
 
-             <h5 class="light white-text" id="hero-subheading">BA, Information Systems. Coding bootcamp grad.
+             <!-- OLD 2 LINE SUBHEADING -->
+             <!-- <h5 class="light white-text" id="hero-subheading">BA, Information Systems. Coding bootcamp grad.
              <br>
-             Passion for <i class="fa fa-code"></i>, learning, visual design, helping others.</h5>
+             Passion for <i class="fa fa-code"></i>, learning, visual design, helping others.</h5> -->
 
+             <!-- NEW PARAGRAPH LINKEDIN STYLE SUMMARY -->
+             <h5 class="light white-text" id="hero-subheading">
+             Computer Information Systems grad. Coding bootcamp grad. Passion for crafting experiences with HTML5, CSS3, JS, JQuery, Angular, Node and more.
+            </h5>
+
+             <a href="#contact" class='smoothScroll'><button type="button" class="btn">Contact</button></a>
              <a href="#portfolio" class='smoothScroll'><button type="button" class="waves-effect waves-light btn">Projects</button></a>
 
 
@@ -101,10 +115,23 @@ http://www.dwuser.com/education/content/quick-guide-adding-smooth-scrolling-to-y
                <div class="card-image">
                  <img src="media/church-homepage.png">
                </div>
-               <div class="card-content extra light">
+               <!-- <div class="card-content extra light">
                   <h6>First United Church</h6>
                   <p>User centered site redesign</p>
-               </div>
+                  <div class="chip">Expression Engine CMS</div>
+                  <div class="chip">UX Design</div>
+               </div> -->
+               <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">Card Title</span>
+                  <p>
+                      User centered site redesign
+                      <i class="devicon-angularjs-plain"></i>
+                      <i class="devicon-bootstrap-plain"></i>
+                      <i class="devicon-html5-plain"></i>
+                      <i class="devicon-css3-plain"></i>
+                  </p>
+
+                </div>
              </div>
            </div>
         </a>
@@ -117,7 +144,11 @@ http://www.dwuser.com/education/content/quick-guide-adding-smooth-scrolling-to-y
                 </div>
                 <div class="card-content extra light">
                    <h6>First United Church</h6>
-                   <p>User centered site redesign</p>
+                   <i class="devicon-angularjs-plain"></i>
+                   <i class="devicon-bootstrap-plain"></i>
+                   <i class="devicon-html5-plain"></i>
+                   <i class="devicon-css3-plain"></i>
+                   <p>User centered site redesign. <br>Angular, Node, Bootstrap.</p>
                 </div>
               </div>
             </div>
@@ -206,52 +237,7 @@ http://www.dwuser.com/education/content/quick-guide-adding-smooth-scrolling-to-y
     </div> <!-- end row -->
 
 
-    <!-- CAROUSEL ROW: FIRST UNITED CHURCH -->
-    <div class="row project-row">
 
-        <!-- IMAGE COLUMN -->
-        <div class="col sm12 m7 l7 card-column">
-
-            <!-- CAROUSEL -->
-            <div id="carousel-example-generic" class="carousel slide" data-interval="false">
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                </ol>
-                <!-- slides -->
-                <div class="carousel-inner" role="listbox">
-                    <div class="item active">
-                        <img src="media/church-homepage.png" alt="">
-                        <p>Is this below the image? </p>
-                    </div>
-                    <div class="item">
-                        <img src="media/battlebanana-gameboard-win.png" alt="">
-                        <p>Is this below the image? </p>
-                    </div>
-                </div>
-
-                <!-- Controls -->
-                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div> <!-- end carousel -->
-        </div> <!-- end column -->
-
-        <!-- TEXT COLUMN -->
-        <div class="col sm12 m5 l5">
-           <h4>First United Church</h4>
-           <div class="chip">Expression Engine CMS</div>
-           <div class="chip">UX Design</div>
-           <p class='project-description'>I led a user-centered redesign of this site while serving for 3 years as webmaster. The site is built with Expression Engine CMS. User research, google analytics and various collaborations guided me as I worked to consolidate and enrich the user experience with images, audio and video. <a href="http://www.firstunitedoakpark.com">Live site</a></p>
-        </div>
-    </div> <!-- end row -->
 
 
 
@@ -275,9 +261,12 @@ http://www.dwuser.com/education/content/quick-guide-adding-smooth-scrolling-to-y
       <div name='#about' id='about' class="col s12 m6 l6 three-column">
          <h5 class="kuler-grey">About</h5>
              <img src="media/adam.png" id="imageadam" alt="" />
-           <p class="extra light">Adam is a Chicago-based junior developer. He has an Information Systems BA with honors and years of experience as a webmaster, office manager and communications coordinator. Adam has a passion for coding, learning, visual design, and helping others.</p>
-           <p class="extra light">He also likes audiobooks, morning meditation, finding quiet along the lakefront, exploring and learning with his wife and spending low-key time with family. He lives in the South Loop.</p>
-           <p class="extra light">Adam is currently available for junior front end developer jobs, apprenticeships and possibly internships.</p>
+           <p class="extra light"> I am a recent Computer Information Systems grad (DePaul 2015) and coding bootcamp grad (General Assembly 2016). I love crafting front-end experiences with HTML5, CSS3, JS, JQuery, Angular and Node. I've also built full stack apps and have three years experience designing, implementing and maintaining digital systems to help teams get things done. Folks say I'm dilligent, reliable, helpful, task-oriented and process oriented.</p>
+
+           <!-- Adam is a Chicago-based junior developer. He has an Information Systems BA with honors and years of experience as a webmaster, office manager and communications coordinator. Adam has a passion for coding, learning, visual design, and helping others. -->
+
+           <!-- <p class="extra light">He also likes audiobooks, morning meditation, finding quiet along the lakefront, exploring and learning with his wife and spending low-key time with family. He lives in the South Loop.</p>
+           <p class="extra light">Adam is currently available for junior front end developer jobs, apprenticeships and possibly internships.</p> -->
      </div>
 
 
@@ -296,7 +285,8 @@ http://www.dwuser.com/education/content/quick-guide-adding-smooth-scrolling-to-y
    <!--   TESTIMONIALS  -->
    <div id='testimonials' class="col s12 m6 l6" id="three-column" >
       <h5 class="kuler-grey">Testimonials</h5>
-       <p class="extra light"><i class="fa fa-quote-left"></i> Adam is ambitious, responsible, friendly and detail-oriented. He managed the website I designed for First United which was not an easy task. He had to balance the comments and opinions of a variety of people, but always managed to come up with new ideas on how to improve the site. He was a pleasure to work with! <i class="fa fa-quote-right"></i></p>
+       <p class="extra light"><i class="fa fa-quote-left fa-3x fa-pull-left fa-border"></i> Adam is ambitious, responsible, friendly and detail-oriented. He managed the website I designed for First United which was not an easy task. He had to balance the comments and opinions of a variety of people, but always managed to come up with new ideas on how to improve the site. He was a pleasure to work with!</p>
+
        <p class="normal">- Megan Coleman, Megan Coleman Design</p>
        <p class="extra light"><i class="fa fa-quote-left"></i> Adam took an active role in improving the church’s website… He brought strategic and tactical insights and suggestions for continued improvements for the site as well as improving email communications and the use of Eventbuilder (for transactions). Adam demonstrated willingness to help whenever needed and juggled the responsibilities required of him by church staff and the Communications Committee. <i class="fa fa-quote-right"></i></p>
        <p class="normal">- Stuart Gillette, Nat'l Marketing Mgr., The Northern Trust</p>
@@ -309,30 +299,43 @@ http://www.dwuser.com/education/content/quick-guide-adding-smooth-scrolling-to-y
 
 
 
+ <!-------------------------------------------------->
+ <!--               PARTIALS END HERE              -->
+ <!-------------------------------------------------->
+
    <!--------------------------->
    <!--     STD FOOTER        -->
    <!--------------------------->
   <footer class="page-footer">
     <div class="container">
       <div class="row">
-        <div class="col l12 m12 s12 grey-text text-lighten-3" name='#contact' id="contact">
+        <div class="col l4 m4 s12 grey-text text-lighten-3" name='#contact' id="contact">
            <h5 id="contact">Contact</h5>
-            <p class="grey-text text-lighten-3 extra light">Let's chat. I'm currently available for full or part-time work.</p>
-            <p><i class="fa fa-envelope"></i><a class="grey-text text-lighten-3" href="mailto:adamwilson1234@gmail.com"> Email</a></p>
+            <p class="grey-text text-lighten-3 extra light">Let's connect. I'm currently seeking a full time junior developer position where I can apply myself to solving problems with code. I'm excited to continue progressing on a lifelong learning journey through the world of web development.</p>
+
+            <!-- ICONS ONLY INLINE -->
+            <!-- <a class="grey-text text-lighten-3" href="http://linkedin.com/in/adamwilsonprofile" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a>
+            <a class="grey-text text-lighten-3" href="http://github.com/awilsongithub" target="_blank"><i class="fa fa-github-square fa-2x"></i></a>
+            <a class="grey-text text-lighten-3" href="https://www.visualcv.com/adam-wilson?access=60N0x31Zjt" target="_blank"><i class='fa fa-file-text-o fa-2x'></i></a> -->
+
+
+
+            <p><a class="grey-text text-lighten-3" href="mailto:adamwilson1234@gmail.com"><i class="fa fa-envelope fa-2x"></i> Email</a></p>
+            <p><i class="fa fa-linkedin-square fa-2x"></i><a class="grey-text text-lighten-3" href="http://linkedin.com/in/adamwilsonprofile" target="_blank"> LinkedIn</a></p>
+            <p><i class="fa fa-github-square fa-2x"></i><a class="grey-text text-lighten-3" href="http://github.com/awilsongithub" target="_blank"> Github</a></p>
+            <p><i class='fa fa-file-text-o fa-2x'></i><a class="grey-text text-lighten-3" href="https://www.visualcv.com/adam-wilson?access=60N0x31Zjt" target="_blank"> Resume</a></p>
+
+            <!-- ICON AND TEXT LIST -->
+            <!-- <p><i class="fa fa-envelope"></i><a class="grey-text text-lighten-3" href="mailto:adamwilson1234@gmail.com"> Email</a></p>
             <p><i class="fa fa-linkedin-square"></i><a class="grey-text text-lighten-3" href="http://linkedin.com/in/adamwilsonprofile" target="_blank"> LinkedIn</a></p>
             <p><i class="fa fa-github-square"></i><a class="grey-text text-lighten-3" href="http://github.com/awilsongithub" target="_blank"> Github</a></p>
-            <p><a href="https://www.visualcv.com/adam-wilson?access=60N0x31Zjt" target="_blank">Resume</a></p>
+            <p><i class='fa fa-file-text-o'></i><a class="grey-text text-lighten-3" href="https://www.visualcv.com/adam-wilson?access=60N0x31Zjt" target="_blank"> Resume</a></p> -->
 
             <!-- <p><a class="grey-text text-lighten-3" href="https://www.visualcv.com/adam-wilson?access=60N0x31Zjt" target="_blank">Resume</a></p> -->
         </div>
       </div>
     </div>
-    <div class="footer-copyright">
-      <div class="container">
-      © 2016 Copyright Adam Wilson
-      <!-- <a class="grey-text text-lighten-4 right" href="#!">More Links</a> -->
-      </div>
-    </div>
+    
   </footer>
 
   <!--------------------------------->

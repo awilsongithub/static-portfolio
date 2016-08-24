@@ -22,7 +22,7 @@ section {
     width: 90%;
 }
 .wrapper {
-    /*padding-top: 30px;*/
+    padding-top: 30px;
 	/*padding-bottom: 0px;*/
 	/*padding-left: 5%;
 	padding-right: 5%;*/
@@ -122,6 +122,15 @@ nav .button-collapse {
 #top-nav-menu {
     padding: 25px;
 }
+#top-nav-menu li a {
+	/*padding-bottom: 25px;*/
+	padding-right: 25px;
+	text-decoration: none;
+	/*border-bottom: 4px solid #E58C3D;*/
+}
+#top-nav-menu li a:hover {
+	color:  rgb(229, 140, 61);
+}
 /*
 ==================================
 HERO DIV
@@ -129,7 +138,6 @@ HERO DIV
 */
 #hero-text {
 	padding-top: 100px;
-	text-align: center;
 }
 #hero-p {
     /*font-size: 16px;
@@ -165,7 +173,7 @@ RECIPE CARDS
 	height: auto;
 }
 .carousel-control.right, .carousel-control.left {
-	/*background-image: none;*/
+	background-image: none;
 }
 .carousel-inner p {
 	padding: 8px 8px 8px 8px;
@@ -225,12 +233,17 @@ label {
 	margin: 10px 0 10px 0;
 }
 .btn {
-    background-color: #efce13;
+    /*background-color: #efce13;
     margin-right: 6px;
-    border-radius: 1px;
+    border-radius: 1px;*/
+	background-color: rgba(229, 140, 61, .7);
+	margin-right: 6px;
+	border-radius: 0px;
+	width: 35%;
+	height: 43px;
 }
-.btn:hover, .btn:active {
-    background-color: #edd54e;
+.btn:hover, .btn:active, .btn:visited {
+    background-color: #E58C3D;
 }
 
 .form-auth {
@@ -296,9 +309,10 @@ OTHER STYLING
      width: 40%;
 	 margin: auto;
 	 max-width: 175px;
-	 padding: 10px 10px 3px 0px;
+	 margin: 0px 20px 20px 0px;
      /* display: block; */
      float: left;
+	 box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
 }
 
 /*
@@ -322,7 +336,6 @@ MEDIA QUERIES
 	}
 	#hero-text {
 		padding-top: 40px;
-		text-align: center;
 	}
 	#hero-subheading {
 		font-weight: normal;
