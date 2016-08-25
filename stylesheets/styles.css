@@ -196,9 +196,26 @@ RECIPE CARDS
   width: 100%;
 }*/
 .project-row {
-    padding: 15px 0px 50px 0px;
-	box-shadow: 0 4px 4px -4px #888888;
+    padding: 65 0px 50px 0px;
+	/*box-shadow: 0 4px 4px -4px #888888;*/
 }
+#project-description-col {
+	padding-left: 25px;
+}
+#project-description-col li {
+	float: left;
+	padding: 5px 15px 5px 10px;
+}
+#project-description-col li:first-child {
+	border-right: 1px solid lightgrey;
+	margin-left: 0px;
+	padding: 5px 15px 5px 0px;
+
+}
+.project-description-p {
+	padding-top: 25px;
+}
+
 .card-section {
 	padding-bottom: 0px;
 }
