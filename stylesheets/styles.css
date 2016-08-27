@@ -119,29 +119,28 @@ nav {
 	/*background-color: #2A1D24;*/
 	/*background-color: #5A3E4C;*/
 	background-color: #382937; /* dark purple from kuler */
+	/*background-color: rgba(56, 41, 55, .5);*/
 }
 nav .button-collapse {
     float: right;
 }
-
 #top-nav-menu li a {
 	/*padding-bottom: 25px;*/
 	padding-right: 25px;
 	text-decoration: none;
+	height: 100%;
+    padding: 32px 15 25 24px;
 	/*border-bottom: 4px solid #E58C3D;*/
 }
 #top-nav-menu li a:hover {
 	color:  rgb(229, 140, 61);
 }
-
-
 #top-nav-menu {
     /*padding: 25px;*/
 }
-
 #top-nav-menu li {
 	height: 100%;
-    padding: 25 15 25 15;
+    /*padding: 25 15 25 15;*/
     margin-left: 0px;
 }
 #top-nav-menu li:hover, #top-nav-menu a:hover {
@@ -205,6 +204,13 @@ RECIPE CARDS
 	color: white;
 	padding: 2px 15px 3px 13px;
 }
+.card-project-info {
+	background-color: brown;
+	width: 100%;
+	color: white;
+	padding: 10 20 10 20;
+}
+
 
 
 
@@ -274,12 +280,12 @@ background: url(images/... ) no-repeat;
 .project-image {
     width: 100%;
 }
-/*.card-title {
+/*. {
   background: rgba(81, 45, 168, .9);
   width: 100%;
 }*/
 .project-row {
-    padding: 65 0px 50px 0px;
+    padding: 15px 0px 50px 0px;
 	/*box-shadow: 0 4px 4px -4px #888888;*/
 }
 #project-description-col {
