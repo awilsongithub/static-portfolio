@@ -1,4 +1,17 @@
 /*
+=========================================
+VARIABLE NOTES FOR LESS
+
+purple (nav etc): #382937
+btn hover orange: #E58C3D
+btn orange: rgba(255, 171, 64, .7)
+fucop aqua: (headings h5?):  #26a69a
+
+
+=========================================
+*/
+
+/*
 ==================================
 MAJOR ELEMENTS
 ===================================
@@ -32,6 +45,9 @@ section {
 	padding-right: 5%;*/
     /*LET CONTAINER DO MARGINS */
 }
+.row {
+	margin-bottom: 0px;
+}
 .nav-wrapper {
 	/*padding-left: 5%;
 	padding-right: 5%;*/
@@ -52,6 +68,10 @@ input {
 }
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
+}
+.section-heading {
+	margin-bottom: 25px;
+	color: #382937;
 }
 .kuler-grey {
 	color: #644D52; /* purple/grey */
@@ -75,6 +95,7 @@ footer.page-footer {
 	/*background-color: #202020;*/
 	background-color: #382937; /* dark purple from kuler */
 	margin-top: 0px;
+	padding-bottom: 50px;
 }
 
 .three-column {
@@ -205,10 +226,10 @@ RECIPE CARDS
 	padding: 2px 15px 3px 13px;
 }
 .card-project-info {
-	background-color: brown;
+	background-color: #382937;
 	width: 100%;
 	color: white;
-	padding: 10 20 10 20;
+	padding: 5 20 5px 20;
 }
 
 
@@ -315,7 +336,8 @@ background: url(images/... ) no-repeat;
   /*height: 200px; this can change aspect ratio */
 }
 .card-content {
-  color: #353A3B;
+  	color: #353A3B;
+	padding: 13px 20px 15px 20;
 }
 #recipe-card-image {
     object-fit: cover;
@@ -345,7 +367,7 @@ label {
 	background-color: rgba(255, 171, 64, .7);
 	margin-right: 6px;
 	border-radius: 0px;
-	width: 35%;
+	width: 47%;
 	height: 43px;
 }
 .btn:hover, .btn:active, .btn:visited {
@@ -387,6 +409,9 @@ OTHER STYLING
 /*.container {
   width: 92%;
 }*/
+#contact h5 {
+	color: white;
+}
 .hr-shadow {
     border: 0;
     height: 1px;
@@ -411,6 +436,7 @@ OTHER STYLING
 }
 .about-section {
 	background-color: #F6F4F1;
+	padding: 50 0 50 0;
 }
 #imageadam {
      width: 40%;
