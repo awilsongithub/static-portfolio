@@ -48,6 +48,9 @@ section {
 .row {
 	margin-bottom: 0px;
 }
+#about .row .col {
+	padding: 0 25 0 25;
+}
 .nav-wrapper {
 	/*padding-left: 5%;
 	padding-right: 5%;*/
@@ -99,7 +102,7 @@ footer.page-footer {
 }
 
 .three-column {
-	padding: 0rem 2.25rem 0rem 0rem;
+	padding: 0rem 35px 0rem 0rem;
 }
 blockquote {
   border-left: 5px solid #747474; /* Just change the color value and that's it*/
@@ -167,6 +170,15 @@ nav .button-collapse {
 #top-nav-menu li:hover, #top-nav-menu a:hover {
 	background-color: rgba(255, 171, 64, .7);
 }
+#project-nav {
+	position: absolute;
+	top: 606px;
+}
+#project-nav a, #project-nav i {
+	color: #E58C3D;
+
+}
+
 
 
 
@@ -309,8 +321,13 @@ background: url(images/... ) no-repeat;
     padding: 15px 0px 50px 0px;
 	/*box-shadow: 0 4px 4px -4px #888888;*/
 }
+.project-details-row {
+	padding-top: 50px;
+	padding-bottom: 100px;
+}
 #project-description-col {
 	padding-left: 25px;
+	height: 500px;
 }
 #project-description-col li {
 	float: left;
@@ -335,9 +352,14 @@ background: url(images/... ) no-repeat;
   max-height: 300px;
   /*height: 200px; this can change aspect ratio */
 }
-.card-content {
+.card .card-content {
   	color: #353A3B;
-	padding: 13px 20px 15px 20;
+	padding: 10px 20px 20px 20px;
+	border-radius: 0px;
+}
+.chip {
+	border-radius: 0px;
+	margin: 4 0 0 0;
 }
 #recipe-card-image {
     object-fit: cover;
@@ -372,6 +394,9 @@ label {
 }
 .btn:hover, .btn:active, .btn:visited {
     background-color: #E58C3D;
+}
+.visit-site-btn {
+	background-color: rgb(255, 171, 64);
 }
 
 .form-auth {
@@ -468,10 +493,14 @@ MEDIA QUERIES
       transform: translateX(-50%);
 	}
 	#hero-text {
-		padding-top: 40px;
+		padding-top: 25px;
 	}
 	#hero-subheading {
-		font-weight: normal;
+		font-size: 16px;
+		font-weight: 300;
+	}
+	#hero-heading {
+		font-size: 25px;
 	}
 	#hero-image {
 		/*81, 45, 168,*/
@@ -479,7 +508,14 @@ MEDIA QUERIES
 		linear-gradient(rgba(90, 62, 76, 0.5), rgba(0, 0, 0, 0.7)), url(../media/adam_workspace_cropped.jpg);
 		background-size: cover;
 		color: white;
-		height: 250px;
+		height: 300px;
+	}
+	.three-column {
+		border-bottom: 1px solid lightgrey;
+		/*padding: 25 0 25 0;*/
+	}
+	.row .col {
+		padding: 25 0 25 0;
 	}
 
 }
