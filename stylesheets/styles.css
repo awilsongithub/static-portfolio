@@ -171,8 +171,8 @@ nav .button-collapse {
 	background-color: rgba(255, 171, 64, .7);
 }
 #project-nav {
-	position: absolute;
-	top: 606px;
+	position: relative;
+    top: 40px;
 }
 #project-nav a, #project-nav i {
 	color: #E58C3D;
@@ -228,7 +228,7 @@ RECIPE CARDS
 	background-image: none;
 }
 .carousel-inner {
-	height: 500;
+	max-height: 500px;
 }
 .carousel-inner p {
 	padding: 8px 8px 8px 8px;
@@ -397,6 +397,7 @@ label {
 }
 .visit-site-btn {
 	background-color: rgb(255, 171, 64);
+	width: 215px;
 }
 
 .form-auth {
@@ -448,12 +449,13 @@ OTHER STYLING
 .fa {
 	color: lightgrey;
 }
-.brand-logo {
-  position: relative;
-  display: block;
+nav .brand-logo {
+  position: absolute;
+  display: inline-block;
   font-weight: 600;
   font-size: 2.5em;
   padding-top: 10px;
+  text-decoration: none;
 }
 .yellow-underline {
 	border-bottom: 4px solid #ffab40;
@@ -517,8 +519,14 @@ MEDIA QUERIES
 	.row .col {
 		padding: 25 0 25 0;
 	}
+	.project-details-row {
+	    padding-top: 28px;
+		padding-bottom: 0px;
 
-}
+	}
+	#project-description-col {
+		padding-top: 3px;
+	}
 /*HOW OVERIDE THIS WHICH CENTERS BRAND LOGO AT MEDIUM
 @media only screen and (max-width: 980px)
 nav .brand-logo {
