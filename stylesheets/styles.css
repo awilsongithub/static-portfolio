@@ -228,7 +228,7 @@ RECIPE CARDS
 	background-image: none;
 }
 .carousel-inner {
-	max-height: 500px;
+	height: 450px;
 }
 .carousel-inner p {
 	padding: 8px 8px 8px 8px;
