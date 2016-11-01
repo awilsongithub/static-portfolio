@@ -487,6 +487,9 @@ MEDIA QUERIES
       -webkit-transform: translateX(-20%);
       transform: translateX(-20%);
 	}
+	.card-content h6 {
+		font-size: 1.25rem;
+	}
 }
 @media only screen and (max-width: 500px) {
 	nav .brand-logo {
