@@ -216,13 +216,13 @@ HERO DIV
 
 /*
 ==================================
-RECIPE CARDS
+DETAILS PAGES CAROUSEL
 ===================================
 */
 .carousel {
     /*box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);*/
 	height: auto;
-	border: 1px solid lightgrey;
+	/*border: 1px solid lightgrey;*/
 }
 .carousel-control.right, .carousel-control.left {
 	background-image: none;
@@ -237,12 +237,7 @@ RECIPE CARDS
 	color: white;
 	padding: 2px 15px 3px 13px;
 }
-.card-project-info {
-	background-color: #382937;
-	width: 100%;
-	color: white;
-	padding: 5 20 5px 20;
-}
+
 
 
 
@@ -297,19 +292,11 @@ background: url(images/... ) no-repeat;
     opacity: 1;
 }
 
-
-
-
-#portfolio {
-	/*background-color: #202020;*/
-	/*color: white;*/
-}
-.card {
-	max-height: 500px;
-}
-.card-column {
-	padding: 0px 45px 0px 0px;
-}
+/*
+==================================
+DETAILS PAGES TEXT (RIGHT COLUMN)
+===================================
+*/
 .project-image {
     width: 100%;
 }
@@ -343,13 +330,32 @@ background: url(images/... ) no-repeat;
 	padding-top: 25px;
 }
 
+
+/*
+==================================
+PROJECT CARDS ON HOME PAGE
+===================================
+*/
+
+.card {
+	max-height: 400px;
+}
+.card-column {
+	padding: 0px 45px 0px 0px;
+}
+.card-project-info {
+	background-color: #382937;
+	width: 100%;
+	color: white;
+	padding: 5 20 5px 20;
+}
 .card-section {
 	padding-bottom: 0px;
 }
 .card-image img {
   /*height: 350px;*/
   width: 100%;
-  max-height: 300px;
+  max-height: 250px;
   /*height: 200px; this can change aspect ratio */
 }
 .card .card-content {
@@ -487,11 +493,17 @@ MEDIA QUERIES
       -webkit-transform: translateX(-20%);
       transform: translateX(-20%);
 	}
+	.card {
+		height: 450px;
+	}
 	.card-content h6 {
 		font-size: 1.25rem;
 	}
+	.carousel-inner {
+		height: 290px;
+	}
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
 	nav .brand-logo {
 	  left: 28%;
       -webkit-transform: translateX(-50%);
@@ -515,6 +527,15 @@ MEDIA QUERIES
 		color: white;
 		height: 300px;
 	}
+	.card {
+		height: 500px;
+	}
+	.card-image img {
+		max-height: 250px;
+	}
+	.card-column {
+		padding: 0px !important;
+	}
 	.three-column {
 		border-bottom: 1px solid lightgrey;
 		/*padding: 25 0 25 0;*/
@@ -525,11 +546,22 @@ MEDIA QUERIES
 	.project-details-row {
 	    padding-top: 28px;
 		padding-bottom: 0px;
-
 	}
 	#project-description-col {
 		padding-top: 3px;
 	}
+}
+@media only screen and (max-width: 550px) {
+	nav .brand-logo {
+		margin-left: 30px;
+	}
+}
+@media only screen and (max-width: 450) {
+	nav .brand-logo {
+		margin-left: 35px;
+	}
+}
+
 /*HOW OVERIDE THIS WHICH CENTERS BRAND LOGO AT MEDIUM
 @media only screen and (max-width: 980px)
 nav .brand-logo {
