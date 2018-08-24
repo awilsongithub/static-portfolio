@@ -144,6 +144,7 @@ nav {
 	/*background-color: #5A3E4C;*/
 	background-color: #382937; /* dark purple from kuler */
 	/*background-color: rgba(56, 41, 55, .5);*/
+	box-shadow: rgba(0, 0, 0, 0.44) 0px 3px 10px 0px, rgba(0, 0, 0, 0.16) 0px 2px 10px 0px;
 }
 nav .button-collapse {
     float: right;
