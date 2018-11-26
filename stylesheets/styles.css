@@ -347,6 +347,7 @@ SINGLE WORK SAMPLE PAGE
 
 ul, li {
 	padding-bottom: .5em;
+  font-weight: 300;
 }
 .list-header {
 
