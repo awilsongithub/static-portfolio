@@ -203,6 +203,11 @@ DETAILS PAGES CAROUSEL
 	color: white;
 	padding: 2px 15px 3px 13px;
 }
+.carousel.slide {
+	box-shadow:
+	0 2px 5px 0 rgba(0,0,0,0.16), 
+	0 2px 5px 0 rgba(0,0,0,0.12);
+}
 
 #carousel-nav-left {
 	position: absolute;
@@ -227,6 +232,11 @@ DETAILS PAGES CAROUSEL
 /* override bootstrap carousel control styling since I'm using my button */
 .carousel-control {
     opacity: 1;
+}
+.carousel-inner > .item > img {
+	object-fit: cover;
+	height: 500px;
+	width: 100%;
 }
 
 /*
@@ -425,12 +435,18 @@ MEDIA QUERIES
 	.carousel-inner {
 		height: 290px;
 	}
+	.carousel-inner > .item > img {
+		height: 300px;
+	}
 }
 @media only screen and (max-width: 600px) {
-	nav .brand-logo {
-	  left: 28%;
-      -webkit-transform: translateX(-50%);
-      transform: translateX(-50%);
+	nav .brand-logo,
+	nav .button-collapse {
+	  /* left: 28%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%); */
+		font-size: 2em;
+		padding-top: 15px;
 	}
 	#hero-text {
 		padding-top: 25px;
@@ -470,7 +486,9 @@ MEDIA QUERIES
 	}
 	#project-description-col {
 		padding-top: 3px;
+		padding-left: unset;
 	}
+
 }
 @media only screen and (max-width: 550px) {
 	nav .brand-logo {
