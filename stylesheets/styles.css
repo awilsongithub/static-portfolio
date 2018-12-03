@@ -136,9 +136,8 @@ nav .button-collapse {
   padding: 32px 15 25 24px;
 }
 #top-nav-menu li a:hover {
-	color:  rgb(229, 140, 61);
-}
-#top-nav-menu {
+	/* color:  rgb(229, 140, 61); */
+	color: white;
 }
 #top-nav-menu li {
 	height: 100%;
@@ -279,6 +278,7 @@ PROJECT CARDS ON HOME PAGE
 
 .card {
 	max-height: 400px;
+	box-shadow: 0 1px 1px 0 rgba(0,0,0,0.16), 0 1px 1px 0 rgba(0,0,0,0.12)
 }
 .card-column {
 	padding: 0px 45px 0px 0px;
@@ -334,9 +334,11 @@ label {
 	border-radius: 0px;
 	width: 47%;
 	height: 43px;
+	box-shadow: 0 1px 1px 0 rgba(0,0,0,0.16), 0 1px 1px 0 rgba(0,0,0,0.12);
 }
 .btn:hover, .btn:active, .btn:visited {
     background-color: #E58C3D;
+		color: white;
 }
 .visit-site-btn {
 	background-color: rgb(255, 171, 64);
