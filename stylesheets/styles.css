@@ -125,15 +125,22 @@ nav {
 	height: 90px;
 	background-color: #382937; /* dark purple from kuler */
 	box-shadow: rgba(0, 0, 0, 0.44) 0px 3px 10px 0px, rgba(0, 0, 0, 0.16) 0px 2px 10px 0px;
+	line-height: 70px;
 }
 nav .button-collapse {
-    float: right;
+	float: right;
+	padding-top: 13px;
+	text-decoration: none;
+}
+nav .button-collapse:hover {
+	color: white;
 }
 #top-nav-menu li a {
 	padding-right: 25px;
 	text-decoration: none;
 	height: 100%;
-  padding: 32px 15 25 24px;
+	padding: 32px 15 25 24px;
+	line-height: 28px;
 }
 #top-nav-menu li a:hover {
 	/* color:  rgb(229, 140, 61); */
@@ -281,6 +288,9 @@ PROJECT CARDS ON HOME PAGE
 	min-height: 375px;
 	box-shadow: 0 1px 1px 0 rgba(0,0,0,0.16), 0 1px 1px 0 rgba(0,0,0,0.12)
 }
+/* .card.hoverable {
+	cursor: pointer;
+} */
 .card-column {
 	padding: 0px 45px 0px 0px;
 }
@@ -298,16 +308,36 @@ PROJECT CARDS ON HOME PAGE
   max-height: 250px;
 }
 .card .card-content {
-  color: #353A3B;
+  	color: #353A3B;
 	padding: 10px 20px 20px 20px;
 	border-radius: 0px;
 }
+.card h6 {
+	color: #353A3B;
+}
+.card-content .dropdown-toggle {
+	border: 1px solid rgb(255, 255, 255, 0); /* invisible */ 
+    padding: 13px 10px;
+	border-radius: 2px;
+	cursor: pointer;
+	margin-right: -10px;
+}
+.dropdown-menu {
+	left: unset;
+	right: -20px;
+}
+
 .chip {
 	border-radius: 0px;
 	margin: 4 0 0 0;
 }
 #recipe-card-image {
   object-fit: cover;
+}
+
+.flex-container {
+	display: flex;
+	justify-content: space-between;
 }
 
 /*
@@ -392,6 +422,13 @@ OTHER STYLING
 .fa {
 	color: lightgrey;
 }
+.fa-ellipsis-v {
+	width: 40px;
+    text-align: right;
+	line-height: 28px;
+	font-size: 16px;
+    color: #666;
+}
 nav .brand-logo {
   position: absolute;
   display: inline-block;
@@ -445,11 +482,7 @@ MEDIA QUERIES
 @media only screen and (max-width: 600px) {
 	nav .brand-logo,
 	nav .button-collapse {
-	  /* left: 28%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%); */
 		font-size: 2em;
-		padding-top: 15px;
 	}
 	#hero-text {
 		padding-top: 25px;
@@ -460,6 +493,7 @@ MEDIA QUERIES
 	}
 	#hero-heading {
 		font-size: 25px;
+		margin-bottom: 0;
 	}
 	#hero-image {
 		background:

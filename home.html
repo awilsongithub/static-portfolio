@@ -68,7 +68,7 @@
 
              <!-- NEW PARAGRAPH LINKEDIN STYLE SUMMARY -->
              <h5 class="light white-text" id="hero-subheading">
-             Eye for design. Meticulous. Problem Solver. Working as a developer since 2016.
+             AngularJS, React, Javascript, HTML5, CSS3, SASS, Bootstrap, Jasmine, Responsive Design, i18n, l10n, wireframing, user testing
             </h5>
 
              <a href="#contact" class='smoothScroll'><button type="button" class="btn">Contact</button></a>
@@ -79,91 +79,121 @@
  </div> <!-- END HERO IMAGE AREA -->
 
  <!--------------------->
- <!--  POST CARDS     -->
+ <!-- PROJECT CARDS -->
  <!--------------------->
  <section id='portfolio'>
     <div class="container">
         <a name='#portfolio'></a> <!-- named anchor for smoothScroll -->
         <h5 class='section-heading'>Projects</h5>
-        <p>Some toys I built. My best work was during my 18 mo. at WebCheckout.</p>
 
     <div class="row project-row">
 
-        <!-- PROJECT CARD: DASHBOARD -->
-        <a href="dashboard.html">
-          <div class="col s12 m6 l3 card-column">
+      <!-- PROJECT CARD: TOUGH ?S -->
+        <div class="col s12 m6 l4 card-column">
+
+          <a href="https://factcollectr-8c6bd.firebaseapp.com/" target='_blank'>
+
             <div class="card hoverable">
               <div class="card-image">
-                  <img src="media/dashboard_card2.png">
+                <img src="media/toughquestions.png">
               </div>
-              <!-- <div class="card-project-info">
-                  <h6>JS Framework Dashboard</h6>
-              </div> -->
               <div class="card-content">
-                  <h6>Javascript Framework Dashboard</h6>
-                 <p>Live dashboard for comparing JS frameworks.</p>
-                 <span class="chip">JQuery</span>
-                 <span class="chip">AJAX</span>
-                 <span class="chip">SASS</span>
-               </div>
+
+                <!-- DROPDOWN -->
+                <div class='flex-container'>
+                  <h6>Tough Questions</h6>
+                  <div class="dropdown">
+                    <span class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+                      aria-expanded="true">
+                      <span class="fa fa-ellipsis-v"></span>
+                    </span>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                      <li><a href="https://factcollectr-8c6bd.firebaseapp.com/" target='_blank'>Play Tough Questions</a></li>
+                      <li><a href="https://github.com/awilsongithub/factcollectr" target='_blank'>Github repo</a></li>
+                    </ul>
+                  </div>
+                </div>
+                
+                <p>Trivia quiz app. Questions in 20 categories. Authenticate and save your score.</p>
+                <span class="chip">React</span>
+                <span class="chip">Firebase</span>
+                <span class="chip">Open Trivia DB API</span>
+              </div>
             </div>
+          </a>
+
+        </div>
+      
+        <!-- PROJECT CARD: DASHBOARD -->
+          <div class="col s12 m6 l4 card-column">
+
+            <a href="https://awilsongithub.github.io/dashboard-practice/" target='_blank'>
+              <div class="card hoverable">
+                <div class="card-image">
+                    <img src="media/dashboard_card2.png">
+                </div>
+                <div class="card-content">
+
+                  <!-- DROPDOWN -->
+                  <div class='flex-container'>
+                    <h6>Javascript Framework Dashboard</h6>
+                    <div class="dropdown">
+                      <span class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="true">
+                        <span class="fa fa-ellipsis-v"></span>
+                      </span>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <li><a href="https://awilsongithub.github.io/dashboard-practice/" target='_blank'>Live site</a></li>
+                        <li><a href="https://github.com/awilsongithub/dashboard-practice" target='_blank'>Github repo</a></li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <p>Live dashboard for comparing JS frameworks.</p>
+                  <span class="chip">JQuery</span>
+                  <span class="chip">AJAX</span>
+                  <span class="chip">SASS</span>
+                </div>
+              </div>
+            </a>
+
           </div>
        </a>
 
          <!-- PROJECT CARD: BATTLEBANANA -->
-         <a href="battle.html">
-           <div class="col s12 m6 l3 card-column">
-             <div class="card hoverable">
-               <div class="card-image">
-                   <img src="media/battlebanana-homepage.png">
-               </div>
-               <div class="card-content">
-                  <h6>BattleBanana</h6>
-                  <p>Browser based game built with vanilla JS.</p>
+           <div class="col s12 m6 l4 card-column">
+
+             <a href="http://battlebanana.herokuapp.com/" target='_blank'>
+              <div class="card hoverable">
+                <div class="card-image">
+                  <img src="media/battlebanana-homepage.png">
+                </div>
+                <div class="card-content">
+              
+                  <!-- DROPDOWN -->
+                  <div class='flex-container'>
+                    <h6>Battleship Game</h6>
+                    <div class="dropdown">
+                      <span class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="true">
+                        <span class="fa fa-ellipsis-v"></span>
+                      </span>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <li><a href="http://battlebanana.herokuapp.com/" target='_blank'>Play game</a></li>
+                        <li><a href="https://github.com/awilsongithub/battleship-game" target='_blank'>Github repo</a></li>
+                      </ul>
+                    </div>
+                  </div>
+              
+                  <p>Let's play <s>Battleship</s> BattleBanana!</p>
                   <span class="chip">HTML5</span>
                   <span class="chip">Javascript</span>
                   <span class="chip">LESS</span>
                 </div>
-             </div>
-           </div>
-        </a>
-
-       <!-- PROJECT CARD: LOC8R -->
-       <a href="loc8r.html">
-         <div class="col s12 m6 l3 card-column">
-           <div class="card hoverable">
-             <div class="card-image">
-                 <img src="media/loc8r-card.png">
-             </div>
-             <div class="card-content">
-                <h6>loc8r</h6>
-                <p>MEAN Stack application</p>
-                <span class="chip">Express</span>
-                <span class="chip">MongoDB</span>
-                <span class='chip'>Angular</span>
-                <span class='chip'>Google Maps</span>
               </div>
+             </a>
+            
            </div>
-         </div>
-      </a>
-
-       <!-- PROJECT CARD: CHURCH -->
-       <a href="church.html">
-         <div class="col s12 m6 l3 card-column">
-           <div class="card hoverable">
-             <div class="card-image">
-                 <img src="media/church-homepage2.png">
-             </div>
-             <div class="card-content">
-                <h6>First United Church</h6>
-                <p>User centered site redesign.</p>
-                <span class="chip">UX Design</span>
-                <span class="chip">CMS</span>
-                <span class='chip'>Project Management</span>
-              </div>
-           </div>
-         </div>
-      </a>
 
 
     </div> <!-- end row -->
@@ -178,8 +208,6 @@
  <!-- ABOUT, SKILLS, TESTIMONIALS -->
  <!--------------------------------->
  <section class="about-section" >
-   <!-- <div class="wrapper "> -->
-   <!-- <section id="about-section"> -->
 
    <div class="row container">
 
