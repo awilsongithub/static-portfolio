@@ -528,7 +528,10 @@ MEDIA QUERIES
 		height: 500px;
 	}
 	.card-image img {
-		max-height: 250px;
+		width: 100%;
+    object-fit: cover;
+    max-height: 250px;
+    object-position: top;
 	}
 	.card-column {
 		padding: 0px !important;
