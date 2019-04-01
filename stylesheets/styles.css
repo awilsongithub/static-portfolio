@@ -286,11 +286,23 @@ PROJECT CARDS ON HOME PAGE
 .card {
 	max-height: 400px;
 	min-height: 375px;
-	box-shadow: 0 1px 1px 0 rgba(0,0,0,0.16), 0 1px 1px 0 rgba(0,0,0,0.12)
+	box-shadow: 0 1px 1px 0 rgba(0,0,0,0.16), 0 1px 1px 0 rgba(0,0,0,0.12);
+	overflow: hidden;
 }
-/* .card.hoverable {
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+.card.hoverable:hover {
 	cursor: pointer;
-} */
+	box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2); 
+}
+.card.hoverable:hover .dropdown-toggle {
+	opacity: 1;
+}
 .card-column {
 	padding: 0px 45px 0px 0px;
 }
@@ -307,6 +319,10 @@ PROJECT CARDS ON HOME PAGE
   width: 100%;
   max-height: 250px;
 }
+.card .card-image, 
+.card .card-image img {
+	position: static;
+}
 .card .card-content {
   	color: #353A3B;
 	padding: 10px 20px 20px 20px;
@@ -321,6 +337,8 @@ PROJECT CARDS ON HOME PAGE
 	border-radius: 2px;
 	cursor: pointer;
 	margin-right: -10px;
+	opacity: 0;
+	transition: 300ms ease-in-out;
 }
 .dropdown-menu {
 	left: unset;
@@ -476,6 +494,11 @@ MEDIA QUERIES
 	}
 	.carousel-inner > .item > img {
 		height: 300px;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.card-content .dropdown-toggle {
+		opacity: 1;
 	}
 }
 @media only screen and (max-width: 600px) {
