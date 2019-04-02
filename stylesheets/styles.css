@@ -316,8 +316,10 @@ PROJECT CARDS ON HOME PAGE
 	padding-bottom: 0px;
 }
 .card-image img {
-  width: 100%;
-  max-height: 250px;
+	width: 100%;
+	object-fit: cover;
+	max-height: 250px;
+	object-position: top;
 }
 .card .card-image, 
 .card .card-image img {
@@ -526,12 +528,6 @@ MEDIA QUERIES
 	}
 	.card {
 		height: 500px;
-	}
-	.card-image img {
-		width: 100%;
-    object-fit: cover;
-    max-height: 250px;
-    object-position: top;
 	}
 	.card-column {
 		padding: 0px !important;
